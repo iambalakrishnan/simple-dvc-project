@@ -4,12 +4,12 @@ stages:
     cmd: python src/stage_01_load_and_save.py  --config=params.yaml
     deps:
     - path: src/stage_01_load_and_save.py
-      md5: f16a3b5653ada08fcb5296ebbe437abb
-      size: 998
+      md5: 01ca591c6f40450a4ccc4595894a8836
+      size: 1222
     params:
       params.yaml:
         artifacts.raw_local_data: artifacts/raw_local_data_dir/data.csv
-        data_source.s3_source: https://dvc-demo-dataset.s3.us-east-1.amazonaws.com/winequality_data/winequality-red.csv?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEK3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEA%2BLmjA25JE28HA1wpUazvlQCbMUfj2RZZLh4C%2BxAXkgICIG8o4Mg%2BZLNZBIXaNIiKTUCoSfOE0VtFDE1IXxeexWfMKuQCCHYQABoMMTM1ODg3OTk0MDE1Igy3w%2FNdJRjCRqU%2BL3QqwQIyZUJa9kpTC%2FFg7UBVXcp8BuijbvZQByKs3uHIeAVvD%2FERNWTW8W90SPBpucmQozjSyXUM1CbyDlJKhpDjoXT1SqEF0xlXg8z5%2FIb1XmUR3AonCUJCUyR1RQP6ZQwjI7FVsJBdg%2B%2F1quEoTnlZRlhtTtK9OYIzUSzmrpEbw6YPqnRx2tQRBw1yQCEMyeJEsV%2F9yIpc3sfpva5Ad%2Bq%2BwZXp%2BX9fZ41yk2eLSWr%2F4Bp4mnYuYEKy63Y1H6T0qRB4QFtSvcg%2BC5b6a7WXCJawGQz431ig%2BFR83oyx%2Fb8ZAbQttUvak9nH7jgHGoYtAFms%2FhTzMBbTo%2F7JeNK1b9zOOq95mVk4rZQ8HVooYwcL6Ge1uty5Q6sgmHAyBM0%2FkuOBEkV7qSSYYns1ObZbmWhnQZshQ1B4Keu0ZR9nEPURjym9CVgw%2F8aVmgY6swK5ZiE4GAC9oHnHhI3TEP2HKOL8%2Bz%2FML7pyUKWFjob1k%2FRrK8Cng6ipMgNmGPvhe%2Bjl8fBp3EaPZnOp319DposMJ%2Be%2F%2Br3XvqmzvLLdEOK%2FJMzelZyv4lrZ0uESs4bJEeHtcWFdX6PWmNq99CrH0F2TU7A3DUl3FqcBSEebdgyQLVLXKyv0GypOICtiw9QH0m2gHdu7lOvdfLqyGVaMdAaB78AXEHK6BIHXWqU9LiKwnk0pK6hyAodx3XVEQdFzAaapyCnYYdcuH%2BHq2iEIcNDC%2FvEmzD9T63tQWDWarxAeejLmn3LHFEhFNgAFI9AdbZosWTrEEzxEp4tQ2rwCrrSYeB%2F2UVirVd%2FEAjO1P1kiqvTrSek%2FTS2yz%2FnAdZgk3iQ0KUOxu6dw7EFyYi0mm18eY5l4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221011T123805Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIAR7I4OHSPUTCZTXEF%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=53cc2b9429134938e89aa9b3783c3de589636f58a887d1a419ae23fcb7413627
+        data_source.s3_source: https://dvc-demo-dataset.s3.us-east-1.amazonaws.com/winequality_data/winequality-red.csv?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEK3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEA%2BLmjA25JE28HA1wpUazvlQCbMUfj2RZZLh4C%2BxAXkgICIG8o4Mg%2BZLNZBIXaNIiKTUCoSfOE0VtFDE1IXxeexWfMKuQCCHYQABoMMTM1ODg3OTk0MDE1Igy3w%2FNdJRjCRqU%2BL3QqwQIyZUJa9kpTC%2FFg7UBVXcp8BuijbvZQByKs3uHIeAVvD%2FERNWTW8W90SPBpucmQozjSyXUM1CbyDlJKhpDjoXT1SqEF0xlXg8z5%2FIb1XmUR3AonCUJCUyR1RQP6ZQwjI7FVsJBdg%2B%2F1quEoTnlZRlhtTtK9OYIzUSzmrpEbw6YPqnRx2tQRBw1yQCEMyeJEsV%2F9yIpc3sfpva5Ad%2Bq%2BwZXp%2BX9fZ41yk2eLSWr%2F4Bp4mnYuYEKy63Y1H6T0qRB4QFtSvcg%2BC5b6a7WXCJawGQz431ig%2BFR83oyx%2Fb8ZAbQttUvak9nH7jgHGoYtAFms%2FhTzMBbTo%2F7JeNK1b9zOOq95mVk4rZQ8HVooYwcL6Ge1uty5Q6sgmHAyBM0%2FkuOBEkV7qSSYYns1ObZbmWhnQZshQ1B4Keu0ZR9nEPURjym9CVgw%2F8aVmgY6swK5ZiE4GAC9oHnHhI3TEP2HKOL8%2Bz%2FML7pyUKWFjob1k%2FRrK8Cng6ipMgNmGPvhe%2Bjl8fBp3EaPZnOp319DposMJ%2Be%2F%2Br3XvqmzvLLdEOK%2FJMzelZyv4lrZ0uESs4bJEeHtcWFdX6PWmNq99CrH0F2TU7A3DUl3FqcBSEebdgyQLVLXKyv0GypOICtiw9QH0m2gHdu7lOvdfLqyGVaMdAaB78AXEHK6BIHXWqU9LiKwnk0pK6hyAodx3XVEQdFzAaapyCnYYdcuH%2BHq2iEIcNDC%2FvEmzD9T63tQWDWarxAeejLmn3LHFEhFNgAFI9AdbZosWTrEEzxEp4tQ2rwCrrSYeB%2F2UVirVd%2FEAjO1P1kiqvTrSek%2FTS2yz%2FnAdZgk3iQ0KUOxu6dw7EFyYi0mm18eY5l4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221011T142735Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=ASIAR7I4OHSPUTCZTXEF%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=33ed846e2281f4269b6d7fb3441fdf2e43cc3c9d6b5264930bbe32222608bd95
     outs:
     - path: artifacts/raw_local_data_dir/data.csv
       md5: 7c92f1ee593c0fbd2ad8c67ba5c446df
@@ -21,8 +21,8 @@ stages:
       md5: 7c92f1ee593c0fbd2ad8c67ba5c446df
       size: 93599
     - path: src/stage_02_split_data.py
-      md5: 3dcfe452282149a0aeda989c62806ab8
-      size: 1276
+      md5: d2565764a7ef9719935bed972cabb89c
+      size: 1463
     params:
       params.yaml:
         artifacts.raw_local_data: artifacts/raw_local_data_dir/data.csv
@@ -38,3 +38,46 @@ stages:
     - path: artifacts/processed_data/train.csv
       md5: 0196b80fbeb701453fe0052e35635db2
       size: 74914
+  train:
+    cmd: python src/stage_03_train.py  --config=params.yaml
+    deps:
+    - path: artifacts/processed_data/train.csv
+      md5: 0196b80fbeb701453fe0052e35635db2
+      size: 74914
+    - path: src/stage_03_train.py
+      md5: da1d38c3ae4b63d8d193be2c0ee9669f
+      size: 1933
+    params:
+      params.yaml:
+        artifacts.split_data.train_path: artifacts/processed_data/train.csv
+        base.random_state: 42
+        base.target_col: quality
+        estimators.ElasticNet.params.alpha: 0.9
+        estimators.ElasticNet.params.l1_ratio: 0.4
+    outs:
+    - path: artifacts/report/params.json
+      md5: a4aab0167612f21a6085dd05cfafdbf6
+      size: 44
+    - path: artifacts/saved_models/model.joblib
+      md5: d0ea37497b3c7a508f0d75fabe6ed6ad
+      size: 1369
+  evaluate:
+    cmd: python src/stage_04_evaluate.py  --config=params.yaml
+    deps:
+    - path: artifacts/processed_data/test.csv
+      md5: b31a4073fa82bc444fd5683cb5cf7e76
+      size: 18832
+    - path: artifacts/saved_models/model.joblib
+      md5: d0ea37497b3c7a508f0d75fabe6ed6ad
+      size: 1369
+    - path: src/stage_04_evaluate.py
+      md5: 6be211cba25dc32a2c1d5e41eb5a061d
+      size: 1685
+    params:
+      params.yaml:
+        artifacts.split_data.test_path: artifacts/processed_data/test.csv
+        base.target_col: quality
+    outs:
+    - path: artifacts/report/scores.json
+      md5: b7208cae38a74b89b1f0874fa8df1860
+      size: 100

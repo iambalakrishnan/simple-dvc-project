@@ -1,11 +1,14 @@
-from distutils.command.config import config
+
 import os
 import argparse
 import pandas as pd
 from src.utils.common_utils import read_params, create_dir, save_reports
 from sklearn.linear_model import ElasticNet
 import joblib
+import logging
 
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
+logging.basicConfig(level=logging.DEBUG, format=logging_str)
 
 def train(config_path):
     config = read_params(config_path)
@@ -42,12 +45,14 @@ def train(config_path):
 
     params = {
         "alpha": alpha,
-        "l1_ratio": l1_ratio,
+        "l1_ratio": l1_ratio
     }
 
     save_reports(params_file, params)
 
     joblib.dump(lr, model_path)
+
+    logging.info(f"model saved at {model_path}")
 
     
 
@@ -58,7 +63,7 @@ if __name__ == "__main__":
 
     try:
         data = train(config_path=parsed_args.config)
+        logging.info(f"train stage completed")
         
     except Exception as e:
-        
-        raise e
+        logging.error(e)
