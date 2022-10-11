@@ -1,5 +1,5 @@
 #local lib
-# -e .
+-e .
 
 #dvc
 dvc
@@ -9,6 +9,7 @@ dvc[s3]
 #other libs
 pandas
 scikit-learn
+pyyaml
 
 #testing
 pytest

@@ -12,8 +12,9 @@ setup(
     long_description_content_type="terxt/markdown",
     url="https://github.com/iambalakrishnan/simple-dvc-project.git",
     author_email="imbkrishnaa@gmail.com",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    # package_dir={"": "src"},
+    # packages=find_packages(where="src"),
+    packages=["src"],
     license="GNU",
     python_requires=">=3.6",
     install_requires=[
